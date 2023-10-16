@@ -8,12 +8,12 @@ public class factorial {
         System.out.println("Factorial of " + smallNumber + " is: " + factorialSmall);
 
         // Calculate factorial for a large number
-        int largeNumber = 20;
+        int largeNumber = 15;
         BigInteger factorialLarge = calculateFactorial(largeNumber);
         System.out.println("Factorial of " + largeNumber + " is: " + factorialLarge);
     }
 
-    private static BigInteger calculateFactorial(int n) {
+    public static BigInteger calculateFactorial(int n) {
         BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= n; i++) {
             factorial = factorial.multiply(BigInteger.valueOf(i));

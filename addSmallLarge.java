@@ -2,21 +2,22 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class addSmallLarge {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int firstNumber = scanner.nextInt();
+        String num1 = scanner.nextLine();
 
         System.out.print("Enter the second number: ");
-        int secondNumber = scanner.nextInt();
+        String num2 = scanner.nextLine();
 
-        BigInteger num1 = new BigInteger(firstNumber);
-        BigInteger num2 = new BigInteger(secondNumber);
+        BigInteger number1 = new BigInteger(num1);
+        BigInteger number2 = new BigInteger(num2);
 
-        // Perform addition
-        BigInteger sum = num1.add(num2);
+        // Add the two numbers
+        BigInteger sum = number1.add(number2);
 
-        System.out.println("Sum: " + sum);
+        System.out.println("Sum of the two numbers: " + sum);
     }
+    
 }
